@@ -13,9 +13,9 @@ setup(
     version=".".join(map(str, VERSION)),
     description='django-app-metrics is a reusable Django application for tracking and emailing application metrics.',
     long_description=readme,
-    author='Frank Wiles',
-    author_email='frank@revsys.com',
-    url='https://github.com/frankwiles/django-app-metrics',
+    author='Jerome Blondon',
+    author_email='jerome@blondon.fr',
+    url='https://github.com/jbl2024/django-app-metrics-no-celery',
     packages=find_packages(),
     package_data={
         'app_metrics': [
@@ -23,8 +23,6 @@ setup(
         ]
     },
     install_requires = [
-        'celery',
-        'django-celery',
     ],
     tests_require = ['mock', 'django-coverage', 'coverage'],
     classifiers=[

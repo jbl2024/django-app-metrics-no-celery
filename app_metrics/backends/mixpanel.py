@@ -19,7 +19,7 @@ def metric(slug, num=1, properties=None):
              properties={"method": "email", "number-friends": "12", "ip": "123.123.123.123"})
     """
     token = _get_token()
-    mixpanel_metric_task.delay(slug, num, properties)
+    mixpanel_metric_task(slug, num, properties)
 
 
 def timing(slug, seconds_taken, **kwargs):

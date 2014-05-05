@@ -2,7 +2,7 @@ from app_metrics.tasks import librato_metric_task
 
 
 def _get_func(async):
-    return librato_metric_task.delay if async else librato_metric_task
+    return librato_metric_task if async else librato_metric_task
 
 
 def metric(slug, num=1, async=True, **kwargs):

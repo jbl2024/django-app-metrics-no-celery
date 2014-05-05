@@ -2,6 +2,8 @@
 Django App Metrics
 ==================
 
+!!! This is a modified version where celery support has been removed !!!
+
 .. image:: https://secure.travis-ci.org/frankwiles/django-app-metrics.png
     :alt: Build Status
     :target: http://travis-ci.org/frankwiles/django-app-metrics
